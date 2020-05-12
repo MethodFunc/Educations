@@ -24,7 +24,7 @@ Admin login_server(char id[ID_SIZE], char pw[PAWD_SIZE])
 
 }
 
-Admin *admin_server(Admin *admin)
+Admin* admin_server(Admin* admin)
 {
 	int stat1;
 	int stat2;
@@ -36,16 +36,44 @@ Admin *admin_server(Admin *admin)
 
 	if (1 == stat1 || 1 == stat2)
 	{
-		printf("���̵� �Ǵ� ��й�ȣ�� Ʋ�Ƚ��ϴ�.\n");
+		printf("아이디 또는 비밀번호가 틀렸습니다.\n");
 		admin->stat = (-1 == (stat1 && stat2));
 	}
 	else {
-		
+
 		admin->stat = (0 == (stat1 && stat2));
 	}
 }
 
-//Admin* teach_server(Admin* admin)
-//{
-//
-//}
+Admin* teach_server(Teach *Head, Admin* admin)
+{
+	int stat1;
+	int stat2;
+
+	login_server(admin->id, admin->pass);
+
+	while (0 != Head)
+	{
+		if (0 == (strcmp(admin->id, Head->data.id)))
+		{
+			stat1 = ((1 == strcmp(admin->id, Head->data.id)) || (-1 == strcmp(admin->id, Head->data.id)));
+		}
+
+		if(0 == (strcmp(admin->pass, Head->data.pass)))
+		{
+			stat2 = ((1 == strcmp(admin->pass, Head->data.pass)) || (-1 == strcmp(admin->pass, Head->data.pass)));
+		}
+
+		Head = Head->next;
+	}	
+
+	if (1 == stat1 || 1 == stat2)
+	{
+		printf("아이디 또는 비밀번호가 틀렸습니다.\n");
+		admin->stat = (-1 == (stat1 && stat2));
+	}
+	else {
+
+		admin->stat = (0 == (stat1 && stat2));
+	}
+}
