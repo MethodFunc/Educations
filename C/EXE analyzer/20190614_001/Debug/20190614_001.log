@@ -1,0 +1,34 @@
+﻿빌드 시작: 2019-06-28 10:14:48
+     1>2 노드의 "C:\Users\user\Downloads\20190628\program\EXE 분석\20190614_001\20190614_001.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+         main.c
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(20): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _open. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(336) : 'open' 선언을 참조하십시오.
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(32): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(326) : 'close' 선언을 참조하십시오.
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(36): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _read. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(337) : 'read' 선언을 참조하십시오.
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(41): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(326) : 'close' 선언을 참조하십시오.
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(49): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(326) : 'close' 선언을 참조하십시오.
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(76): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _lseek. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(334) : 'lseek' 선언을 참조하십시오.
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(87): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(326) : 'close' 선언을 참조하십시오.
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(91): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _read. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(337) : 'read' 선언을 참조하십시오.
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(96): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(326) : 'close' 선언을 참조하십시오.
+     1>c:\users\user\downloads\20190628\program\exe 분석\20190614_001\main.c(118): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _close. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\io.h(326) : 'close' 선언을 참조하십시오.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\user\Downloads\20190628\program\EXE 분석\Debug\20190614_001.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\user\Downloads\20190628\program\EXE 분석\Debug\20190614_001.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\user\Downloads\20190628\program\EXE 분석\Debug\20190614_001.lib" /MACHINE:X86 Debug\hexaview.obj
+         Debug\main.obj
+         20190614_001.vcxproj -> C:\Users\user\Downloads\20190628\program\EXE 분석\Debug\20190614_001.exe
+     1>"C:\Users\user\Downloads\20190628\program\EXE 분석\20190614_001\20190614_001.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.47
