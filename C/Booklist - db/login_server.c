@@ -36,7 +36,7 @@ Admin* admin_server(Admin* admin)
 
 	if (1 == stat1 || 1 == stat2)
 	{
-		printf("ì•„ì´ë”” ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.\n");
+		printf("¾ÆÀÌµğ ¶Ç´Â ºñ¹Ğ¹øÈ£°¡ Æ²·È½À´Ï´Ù.\n");
 		admin->stat = (-1 == (stat1 && stat2));
 	}
 	else {
@@ -69,7 +69,7 @@ Admin* teach_server(Teach *Head, Admin* admin)
 
 	if (1 == stat1 || 1 == stat2)
 	{
-		printf("ì•„ì´ë”” ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.\n");
+		printf("¾ÆÀÌµğ ¶Ç´Â ºñ¹Ğ¹øÈ£°¡ Æ²·È½À´Ï´Ù.\n");
 		admin->stat = (-1 == (stat1 && stat2));
 	}
 	else {

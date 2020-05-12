@@ -115,12 +115,12 @@ Teach* TeachDel(Teach* Head)
 
 	Teach* Del = malloc(sizeof(Teach));
 	Teach* Temp = Head;
-	Teach* Prev = NULL;
+	Teach* Prev = Head;
 	TeachPrint(Head);
 
 	printf("삭제할 교원 이름 : ");
 	fgets(Del->data.name, NAME_SIZE, stdin);
-	for (int i = 0; i < NAME_SIZE; ++i)
+		for (int i = 0; i < NAME_SIZE; ++i)
 	{
 		if (Del->data.name[i] == '\n')
 		{
@@ -133,31 +133,42 @@ Teach* TeachDel(Teach* Head)
 		}
 
 	}
+	if (0 == (strcmp(Del->data.name, Head->data.name)))
+	{
+		Head = Head->next;							//첫번째값 지우기
+		free(Temp);
+		return Head;
+	}
 
 	while (0 != Head)
 	{
+
 		if (0 == (strcmp(Del->data.name, Head->data.name)))
 		{
-			Temp = Temp->next;
-			Prev = Head;
-
-			while (!(Temp == NULL))
+			if (Temp == Head)
 			{
-				if (Temp == Head)
-				{
-					Prev->next = Head->next;
-					free(Temp);
-					break;
-				}
-				Prev = Temp;
-				Temp = Temp->next;;
+				break;
 			}
-
-			Head->next = Prev->next;
 		}
-		//Del = Del->next;
-		Head = Head->next;
+
+			Prev = Head;
+			Temp = Temp->next;
+			Head = Head->next;
 	}
+
+	if (Prev->next != NULL)
+	{
+		Prev->next = Head->next;
+		Head = Prev;
+	}
+
+	if (Prev->next == NULL)
+	{
+		Prev->next = 0;
+	}
+	free(Temp);
+	return Head;
+
 }
 
 

@@ -14,6 +14,7 @@ void admin_menu()
 	unsigned int uiRecord = 0;
 	Teach* Head = 0;
 
+	//Head = FileLoad(Head, &uiRecord);
 	for (;;)
 	{
 		
@@ -32,7 +33,7 @@ void admin_menu()
 			continue;
 			
 		case TDEL:
-			TeachDel(Head);
+			Head = TeachDel(Head);
 			continue;
 
 		case TSCH:
@@ -48,5 +49,6 @@ void admin_menu()
 		}
 		break;
 	}
+	//FileSave(Head, uiRecord);
 	LinkFree(Head);
 }

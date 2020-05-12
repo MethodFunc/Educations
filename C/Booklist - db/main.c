@@ -7,6 +7,7 @@ enum main_select { ADMIN = '1', TEACHER, STUDENT, EXIT };
 int main()
 {
 	Admin* ids = malloc(sizeof(Admin));
+	Teach* Head = malloc(sizeof(Teach));;
 	int iCnum;
 	int i = 0;
 
@@ -46,7 +47,7 @@ int main()
 			continue;
 			
 		case TEACHER:
-			printf("교원 로그인 창입니다.\n");
+			teach_server(Head, ids);
 			continue;
 		case STUDENT:
 			printf("학생 로그인 창입니다.\n");
